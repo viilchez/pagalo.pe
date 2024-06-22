@@ -128,6 +128,9 @@ body {
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
   height: 250px; /* Ajusta la altura según sea necesario */
   width: 800px; /* Ajusta el ancho según sea necesario */
+  color: #373f41;
+  display:flex;
+  justify-content: center;
 }
 
 .ticket-rectangle {
@@ -156,25 +159,47 @@ body {
   font-size: 20px; /* Tamaño de fuente del <h2> */
 }
 
-.add-product {
+.tabla-products {
   position: absolute;
-  top: 50%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #373f41;
+  background-color: #eaecec;
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
-  height: 67px; /* Ajusta la altura según sea necesario */
-  width: 230px; /* Ajusta el ancho según sea necesario */
-  display: flex; /* Utiliza flexbox */
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */
+  height: 50px;
+  width: 730px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.add-product a {
-  font-size: 18px;
-  color: white; /* Color del texto */
-  text-align: center;
+.tabla-products a {
+  font-size: 13px;
+  color: #000000;
   text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.tabla-products .last-items {
+  margin-left: auto; /* Mueve el último grupo de elementos a la derecha */
+}
+
+.products{
+  position: absolute;
+  left: 10px;
+  height: 50px;
+  width: 730px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  color: #000000;
+  font-weight:625;
+  text-decoration: none;
+  padding: 10px;
+  margin-top:100px;
+  margin-left:50px;
+  margin-right: 0px;
 }

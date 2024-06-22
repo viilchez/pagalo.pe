@@ -8,6 +8,7 @@ import Header from './layout/Header';
 import Sidebar from './layout/Sidebar';
 import Main from './Main';
 import Aside from './Aside';
+import CartPage from './CartPage';
 
 // Componente para la página principal
 const HomePage = () => (
@@ -21,26 +22,6 @@ const HomePage = () => (
         <Aside />
       </div>
     </div>
-    <Footer />
-    <Sidebar/>
-  </div>
-);
-
-// Componente para la página de carrito (solo con Header, Main, Aside y Footer)
-const CartPage = () => (
-  <div style={{ display: 'flex', flexDirection: 'column', minHeight: '150vh', backgroundColor: '#ffffff' }}>
-    <Header />
-    <div className="red-rectangle">
-    <h1>Carrito de Compras</h1>
-    <h2>0 Artículos Seleccionados</h2>
-    </div>
-    <div className="cart-rectangle" >
-      <li className="add-product" > 
-      <a href="/">Agregar un Producto</a>
-      </li>
-      <Main /> 
-    </div> 
-    <Aside />
     <Footer />
     <Sidebar/>
   </div>
