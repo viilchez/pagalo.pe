@@ -1,0 +1,180 @@
+body {
+  background: linear-gradient(to bottom right, #490000, #ff0000);
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-custom {
+  background-color: #ec0000;
+}
+
+.header-custom .navbar-brand,
+.header-custom .nav-link {
+  color: white;
+  font-family: "Inter", sans-serif !important;
+  font-size: 1.2rem;
+}
+
+.main-content {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.footer-custom {
+  width: 100%;
+  background-color: #373f41;
+  color: white;
+  padding: 20px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px; /* Puedes ajustar el ancho máximo según tus necesidades */
+  margin: 0 auto;
+}
+
+.footer-left {
+  display: flex;
+  align-items: flex-start;
+  padding-left: 0px;
+}
+
+.footer-right {
+  display: flex;
+  align-items: flex-start;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  margin-left: 23px; /* Ajusta el espacio entre las columnas según sea necesario */
+  margin-right: 60px;
+}
+
+.foot-link {
+  color: white;
+  text-decoration: none;
+  margin: 10px 0; /* Ajusta el margen entre los enlaces según sea necesario */
+}
+
+.foot-link:hover {
+  text-decoration: underline;
+}
+
+.footer-custom img {
+  display: block;
+  padding-top: 0;
+}
+
+.menu-container {
+  position: relative;
+}
+
+.sidebar {
+  position: fixed;
+  right: 0; /* Fijado a la derecha */
+  top: 0; /* Ajustado para estar justo debajo del Header */
+  bottom: 0; /* Llega hasta el fondo de la página */
+  background-color: #ffffff;
+  width: 50px;
+  transition: width 0.9s;
+  overflow: hidden;
+  cursor: pointer;
+  color: white;
+  font-family: Arial, sans-serif;
+  z-index: 1000;
+  border-radius: 25px 0 0 25px; /* Bordes redondeados */
+}
+
+.sidebar:hover {
+  width: 600px; /* Ajusta este valor según tus necesidades */
+}
+
+.sidebar .postula {
+  padding: 10px;
+  white-space: nowrap;
+}
+
+.sidebar .postula span {
+  display: block;
+}
+
+.red-rectangle {
+  position: relative; /* Asegura que .cart-rectangle se posicione en relación a .red-rectangle */
+  height: 300px;
+  display: flex;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+  padding: 150px; /* Espacio interno */
+  background: linear-gradient(to right, #350000, #ec0000);
+  margin-top: 0px; /* Espacio desde el header */
+  margin-bottom: 500px; /* Espacio desde el footer */
+}
+
+.cart-rectangle {
+  position: absolute; /* Permite colocar .cart-rectangle encima de .red-rectangle */
+  top: 53%; /* Ajusta esta propiedad según la posición deseada */
+  left: 29%; /* Mueve el rectángulo más hacia la izquierda */
+  transform: translate(-50%, -50%); /* Centra verticalmente */
+  background-color: #ffffff; /* Color de fondo blanco */
+  border-radius: 10px; /* Bordes redondos */
+  padding: 20px; /* Espacio interno */
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+  height: 250px; /* Ajusta la altura según sea necesario */
+  width: 800px; /* Ajusta el ancho según sea necesario */
+}
+
+.ticket-rectangle {
+  position: absolute; /* Permite colocar .cart-rectangle encima de .red-rectangle */
+  top: 55%; /* Ajusta esta propiedad según la posición deseada */
+  left: 29%; /* Mueve el rectángulo más hacia la izquierda */
+  transform: translate(-50%, -50%); /* Centra verticalmente */
+  background-color: #ffffff; /* Color de fondo blanco */
+  border-radius: 10px; /* Bordes redondos */
+  padding: 20px; /* Espacio interno */
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+  height: 250px; /* Ajusta la altura según sea necesario */
+  width: 800px; /* Ajusta el ancho según sea necesario */
+}
+
+.red-rectangle h1 {
+  position: absolute;
+  left: 40px; /* Ajusta este valor para mover el <h1> más hacia la derecha */
+  top: 20px; /* Ajusta este valor para mover el <h1> más hacia abajo */
+}
+
+.red-rectangle h2 {
+  position: absolute;
+  left: 43px; /* Ajusta este valor para mover el <h2> más hacia la derecha */
+  top: 70px; /* Ajusta este valor para mover el <h2> más hacia abajo */
+  font-size: 20px; /* Tamaño de fuente del <h2> */
+}
+
+.add-product {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #373f41;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+  height: 67px; /* Ajusta la altura según sea necesario */
+  width: 230px; /* Ajusta el ancho según sea necesario */
+  display: flex; /* Utiliza flexbox */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+}
+
+.add-product a {
+  font-size: 18px;
+  color: white; /* Color del texto */
+  text-align: center;
+  text-decoration: none;
+}
