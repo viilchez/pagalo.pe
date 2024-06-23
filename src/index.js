@@ -9,10 +9,12 @@ import Sidebar from './layout/Sidebar';
 import Main from './Main';
 import Aside from './Aside';
 import CartPage from './CartPage';
+import TicketPage from './TicketPage';
+import PaymentMethod from './PaymentMethod';
 
 // Componente para la página principal
 const HomePage = () => (
-  <div style={{ display: 'flex', flexDirection: 'column', minHeight: '150vh' }}>
+  <div style={{ display: 'flex', flexDirection: 'column', minHeight: '120vh' }}>
     <Header />
     <div style={{ flex: '1', display: 'flex' }}>
       <div style={{ flex: '1', marginRight: '20px' }}>
@@ -22,20 +24,6 @@ const HomePage = () => (
         <Aside />
       </div>
     </div>
-    <Footer />
-    <Sidebar/>
-  </div>
-);
-
-const TicketPage = () => (
-  <div style={{ display: 'flex', flexDirection: 'column', minHeight: '150vh', backgroundColor: '#ffffff' }}>
-    <Header />
-    <div className="red-rectangle">
-    </div>
-    <div className="ticket-rectangle">
-      <Main />
-      <Aside />
-    </div> 
     <Footer />
     <Sidebar/>
   </div>
@@ -54,6 +42,10 @@ const router = createBrowserRouter([
   {
     path: "/Mis-Tickets",
     element: <TicketPage />,
+  },
+  {
+    path: "/Metodo-pago",
+    element: <PaymentMethod />,
   },
 ]);
 

@@ -114,7 +114,7 @@ body {
   padding: 150px; /* Espacio interno */
   background: linear-gradient(to right, #350000, #ec0000);
   margin-top: 0px; /* Espacio desde el header */
-  margin-bottom: 500px; /* Espacio desde el footer */
+  margin-bottom: 350px; /* Espacio desde el footer */
 }
 
 .cart-rectangle {
@@ -186,20 +186,127 @@ body {
   margin-left: auto; /* Mueve el último grupo de elementos a la derecha */
 }
 
-.products{
+.products {
   position: absolute;
-  left: 10px;
+  top: 38%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
   height: 50px;
   width: 730px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+}
+
+.left-group,
+.right-group {
+  display: flex;
+  gap: 10px; /* Ajusta el espacio entre los elementos dentro de cada grupo */
+}
+
+.products p {
   font-size: 12px;
   color: #000000;
-  font-weight:625;
   text-decoration: none;
+  font-weight: 625;
   padding: 10px;
-  margin-top:100px;
-  margin-left:50px;
-  margin-right: 0px;
+  margin: 0;
+  text-align: center;
+}
+
+.payment {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #c00000;
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  height: 40px;
+  width: 150px;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  font-weight: 625;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.payment:hover {
+  background-color: #979797; /* Color de fondo al pasar el ratón */
+}
+
+.payment-rectangle{
+  position: absolute; /* Permite colocar .cart-rectangle encima de .red-rectangle */
+  top: 78%; /* Ajusta esta propiedad según la posición deseada */
+  left: 29%; /* Mueve el rectángulo más hacia la izquierda */
+  transform: translate(-50%, -50%); /* Centra verticalmente */
+  background-color: #ffffff; /* Color de fondo blanco */
+  border-radius: 10px; /* Bordes redondos */
+  padding: 20px; /* Espacio interno */
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+  height: 500px; /* Ajusta la altura según sea necesario */
+  width: 800px; /* Ajusta el ancho según sea necesario */
+  color: #373f41;
+  display:flex;
+  justify-content: center;
+}
+
+/* Estilos para el formulario de pago */
+.payment-form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.payment-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.payment-form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.payment-form button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.payment-form button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Estilos adicionales para la página de método de pago si es necesario */
+.red-rectangle {
+  background-color: #ec0000;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.red-rectangle h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.red-rectangle h2 {
+  margin: 0;
+  font-size: 18px;
 }
