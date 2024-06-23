@@ -251,18 +251,6 @@ body {
   background-color: #979797; /* Color de fondo al pasar el ratón */
 }
 
-.payment-rectangle{
-  position: absolute; /* Permite colocar .cart-rectangle encima de .red-rectangle */
-  top: 100%; /* Ajusta esta propiedad según la posición deseada */
-  left: 20%; /* Mueve el rectángulo más hacia la izquierda */
-  transform: translate(-50%, -50%); /* Centra verticalmente */
-  height: 500px; /* Ajusta la altura según sea necesario */
-  width: 800px; /* Ajusta el ancho según sea necesario */
-  color: #373f41;
-  display:flex;
-  justify-content: center;
-}
-
 /* Estilos para el formulario de pago */
 .payment-form {
   max-width: 400px;
@@ -308,4 +296,108 @@ body {
   color: white;
   text-align: center;
   padding: 20px;
+}
+
+.payment-rectangle {
+  position: absolute;
+  top: 99%; /* Ajusta esta propiedad para la posición vertical deseada */
+  left: 25%; /* Centra el rectángulo horizontalmente */
+  transform: translate(-50%, -50%); /* Centra el rectángulo */
+  height: 500px; /* Ajusta la altura según sea necesario */
+  width: 800px; /* Ajusta el ancho según sea necesario */
+  background-color: #eaecec00; /* Color de fondo */
+  border-radius: 10px; /* Bordes redondeados */
+  color: #373f41;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Asegura que los elementos dentro del rectángulo se alineen en columna */
+  padding: 20px;
+}
+
+.method p {
+  position: absolute;
+  top: 66%; /* Ajusta esta propiedad para estar justo encima del rectángulo */
+  left: 24%;
+  transform: translate(-50%, -150%); /* Centra horizontalmente y ajusta verticalmente */
+  font-size: 20px; /* Tamaño de fuente */
+  font-weight: bold; /* Negrita */
+  color: #373f41; /* Color del texto */
+  margin-bottom: 20px; /* Añade un margen inferior si es necesario */
+}
+
+.method h1 {
+  position: absolute;
+  top: 65%; /* Ajusta esta propiedad para estar justo encima del rectángulo */
+  left: 70%;
+  transform: translate(-50%, -150%); /* Centra horizontalmente y ajusta verticalmente */
+  font-size: 20px; /* Tamaño de fuente */
+  font-weight: bold; /* Negrita */
+  color: #373f41; /* Color del texto */
+  margin-bottom: 20px; /* Añade un margen inferior si es necesario */
+}
+
+.method-multired {
+  position: absolute;
+  top: 98%; /* Ajusta esta propiedad para estar justo encima del rectángulo */
+  left: 70%;
+  transform: translate(-50%, -150%);
+}
+
+.method-yape {
+  position: absolute;
+  top: 120%; /* Ajusta esta propiedad para estar justo encima del rectángulo */
+  left: 65%;
+}
+
+.method-pago-efectivo {
+  position: absolute;
+  top: 87%; /* Ajusta esta propiedad para estar justo encima del rectángulo */
+  left: 50.26%;
+}
+
+.payment-info-rectangle {
+  position: absolute; /* Permite colocar .cart-rectangle encima de .red-rectangle */
+  top: 33%; /* Ajusta esta propiedad según la posición deseada */
+  left: 70%; /* Mueve el rectángulo más hacia la izquierda */
+  transform: translate(-50%, -50%); /* Centra verticalmente */
+  background-color: #ffffff; /* Color de fondo blanco */
+  border-radius: 10px; /* Bordes redondos */
+  padding: 20px; /* Espacio interno */
+  box-shadow: 0 40px 40px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+  height: 220px; /* Ajusta la altura según sea necesario */
+  width: 300px; /* Ajusta el ancho según sea necesario */
+  color: #373f41;
+  display: flex;
+  flex-direction: column; /* Asegura que los elementos se alineen en columna */
+  align-items: center; /* Centra los elementos horizontalmente */
+}
+
+.payment-info-rectangle h1 {
+  font-size: 20px; /* Tamaño de fuente */
+  font-weight: 625; /* Negrita */
+  color: #373f41; /* Color del texto */
+  margin-bottom: 10px; /* Reduce el margen inferior para acercar el h2 */
+  text-align: center; /* Alinea el texto al centro */
+}
+
+.payment-info-rectangle h2 {
+  font-size: 14px; /* Tamaño de fuente */
+  font-weight: 625; /* Negrita */
+  color: #373f41; /* Color del texto */
+  align-self: flex-start; /* Alinea el texto a la izquierda */
+  margin-left: 20px; /* Añade un margen izquierdo para mejor alineación */
+  margin-top: 0px; /* Reduce el margen superior para mover hacia arriba */
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.payment-info-rectangle h3 {
+  font-size: 14px; /* Tamaño de fuente similar al h2 */
+  font-weight: 500; /* Negrita */
+  color: #373f41; /* Color del texto */
+  align-self: flex-start; /* Alinea el texto a la izquierda */
+  margin-left: 20px; /* Añade un margen izquierdo para mejor alineación */
+  margin-top: 5px; /* Espacio entre h2 y h3 */
+  text-align: justify; /* Alinea el texto a la izquierda */
+  padding-right: 15px;
 }
