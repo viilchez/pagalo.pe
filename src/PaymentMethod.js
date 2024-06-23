@@ -8,7 +8,7 @@ import Sidebar from './layout/Sidebar';
 const PaymentMethod = () => (
   <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', backgroundColor: '#ffffff' }}>
     <Header />
-    <div className="red-rectangle">
+    <div className="payment-red-rectangle">
       <h1>Método de Pago</h1>
       <h2>Seleccionar Método de Pago</h2>
     </div>
@@ -27,6 +27,9 @@ const PaymentMethod = () => (
         <input type="text" id="cvv" name="cvv" />
         <button type="submit">Pagar</button>
       </form>
+      <div className="paymenbt-rectangle">
+
+      </div>
     </div>
     <Main />
     <Aside />
