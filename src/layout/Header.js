@@ -19,7 +19,7 @@ const Header = () => {
                 <a className="nav-link" href="/">Inicio</a>
               </li>
               <li className="nav-item d-flex align-items-center" style={{ margin: '0 10px' }}>
-                <a href="#" className="nav-link d-flex align-items-center">
+                <a href="/" className="nav-link d-flex align-items-center">
                   <img src={lupa} alt="Buscar" height="25" style={{ margin: '0 10px' }} />
                   Buscar
                 </a>

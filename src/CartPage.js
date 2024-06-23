@@ -37,7 +37,6 @@ const CartPage = () => (
       </div>
       <a className="payment" href="/Metodo-pago">Pagar</a>
     </div>
-    <Main />
     <Aside />
     <Footer />
     <Sidebar />

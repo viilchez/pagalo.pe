@@ -6,7 +6,7 @@ body {
 }
 
 .header-custom {
-  background-color: #ec0000;
+  background-color: #c00000;
 }
 
 .header-custom .navbar-brand,
@@ -81,9 +81,9 @@ body {
   right: 0; /* Fijado a la derecha */
   top: 0; /* Ajustado para estar justo debajo del Header */
   bottom: 0; /* Llega hasta el fondo de la página */
-  background-color: #ffffff;
+  background-color: #b6b6b6;
   width: 50px;
-  transition: width 0.9s;
+  transition: width 0.5s;
   overflow: hidden;
   cursor: pointer;
   color: white;
@@ -126,7 +126,7 @@ body {
   padding: 150px; /* Espacio interno */
   background: linear-gradient(to right, #350000, #ec0000);
   margin-top: 0px; /* Espacio desde el header */
-  margin-bottom: 500px; /* Espacio desde el footer */
+  margin-bottom: 600px; /* Espacio desde el footer */
 }
 
 .cart-rectangle {
@@ -401,3 +401,79 @@ body {
   text-align: justify; /* Alinea el texto a la izquierda */
   padding-right: 15px;
 }
+
+.check-rectangle {
+  position: absolute; /* Permite colocar .cart-rectangle encima de .red-rectangle */
+  top: 55%; /* Ajusta esta propiedad según la posición deseada */
+  left: 29%; /* Mueve el rectángulo más hacia la izquierda */
+  transform: translate(-50%, -50%); /* Centra verticalmente */
+  background-color: #ffffff; /* Color de fondo blanco */
+  border-radius: 10px; /* Bordes redondos */
+  padding: 20px; /* Espacio interno */
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+  height: 250px; /* Ajusta la altura según sea necesario */
+  width: 800px; /* Ajusta el ancho según sea necesario */
+}
+
+.main-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.main-title h1 {
+  font-family: "Inter", sans-serif !important;
+  margin-top: 20px;
+}
+
+.search-bar {
+  width: 50%;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-family: "Inter", sans-serif !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.search-bar:focus {
+  border-color: #66afe9;
+  box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.search-results {
+  width: 50%;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 5px;
+  max-height: 200px;
+  overflow-y: auto;
+  color:#373f41;
+  font-family: "Inter", sans-serif !important;
+}
+
+.search-result-item {
+  padding: 10px;
+  font-size: 16px;
+  border-bottom: 1px solid #eee;
+  color:#373f41;
+  font-family: "Inter", sans-serif !important;
+  cursor: pointer;
+
+}
+
+.search-result-item:last-child {
+  border-bottom: none;
+}
+
+.search-result-item:hover {
+  background-color: #f1f1f1;
+}
+
+

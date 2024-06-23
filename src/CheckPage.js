@@ -5,12 +5,12 @@ import Sidebar from './layout/Sidebar';
 import Main from './Main';
 import Aside from './Aside';
 
-const TicketPage = () => (
+const CheckPage = () => (
     <div style={{ display: 'flex', flexDirection: 'column', minHeight: '120vh', backgroundColor: '#ffffff' }}>
       <Header />
       <div className="red-rectangle">
       </div>
-      <div className="ticket-rectangle">
+      <div className="check-rectangle">
         <Aside />
       </div> 
       <Footer />
@@ -18,4 +18,4 @@ const TicketPage = () => (
     </div>
   );
 
-  export default TicketPage;
+  export default CheckPage;

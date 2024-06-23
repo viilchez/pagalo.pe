@@ -105,7 +105,6 @@ const PaymentMethod = () => {
           {loading && <img src={cargandoGif} alt="Cargando..." style={{ marginLeft: '57px', verticalAlign: 'middle' }} />}
         </form>
       </div>
-      <Main />
       <Aside />
       <Footer />
       <Sidebar />

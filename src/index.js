@@ -11,6 +11,7 @@ import Aside from './Aside';
 import CartPage from './CartPage';
 import TicketPage from './TicketPage';
 import PaymentMethod from './PaymentMethod';
+import CheckPage from './CheckPage';
 
 // Componente para la página principal
 const HomePage = () => (
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
   {
     path: "/Metodo-pago",
     element: <PaymentMethod />,
+  },
+  {
+    path: "/comprobante-pago",
+    element: <CheckPage />,
   },
 ]);
 
