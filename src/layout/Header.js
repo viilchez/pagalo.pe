@@ -31,7 +31,7 @@ const Header = () => {
                 </a>
               </li>
               <li className="nav-item d-flex align-items-center" style={{ margin: '0 10px' }}>
-                <a href="cart" className="nav-link d-flex align-items-center">
+                <a href="/cart" className="nav-link d-flex align-items-center">
                   <img src={carrito} alt="Carrito" height="30" style={{ margin: '0 10px' }} />
                 </a>
               </li>

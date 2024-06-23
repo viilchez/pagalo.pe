@@ -3,65 +3,6 @@ import React, { useState } from 'react';
 const Main = () => {
   const [searchText, setSearchText] = useState('');
   const [results] = useState([
-    'RENIEC',
-    'PODER JUDICIAL',
-    'MIGRACIONES',
-    'POLICÍA NACIONAL DEL PERÚ',
-    'SIS',
-    'MINISTERIO DE TRANSPORTES Y COMUNICACIONES',
-    'GOBIERNO REGIONAL DEL CALLAO',
-    'OSCE',
-    'INPE',
-    'ESSALUD',
-    'JNE',
-    'MINISTERIO PÚBLICO',
-    'SUNARP',
-    'MINISTERIO DE RELACIONES EXTERIORES',
-    'SUCAMEC',
-    'UNIVERSIDAD NACIONAL DE PIURA',
-    'INDECOPI',
-    'UNIVERSIDAD NACIONAL HERMILIO VALDIZAN',
-    'UNIVERSIDAD NACIONAL MAYOR DE SAN MARCOS',
-    'ACADEMIA DE LA MAGISTRATURA',
-    'DIR. REG. TRANSPORTES Y COMUNICACIONES CAJAMARCA',
-    'UNIVERSIDAD NACIONAL FAUSTINO SÁNCHEZ CARRIÓN',
-    'MINISTERIO DE JUSTICIA',
-    'PRONABEC',
-    'SUNEDU',
-    'UNIVERSIDAD NACIONAL DE EDUCACIÓN ENRIQUE GUZMÁN Y VALLE',
-    'AUTORIDAD DE TRANSPORTE URBANO',
-    'MINISTERIO DE TRABAJO',
-    'UNIVERSIDAD NACIONAL DEL SANTA - UNS CHIMBOTE',
-    'UNIVERSIDAD NACIONAL PEDRO RUIZ GALLO',
-    'UNIVERSIDAD NACIONAL JORGE BASADRE GROHMAN',
-    'DIR. REG. TRANSPORTES Y COMUNICACIONES PIURA',
-    'UNIVERSIDAD NACIONAL DEL ALTIPLANO PUNO',
-    'UNIVERSIDAD NACIONAL TECNOLÓGICA DE LIMA SUR',
-    'IPEN',
-    'SUTRAN',
-    'PROVIAS NACIONAL',
-    'UNIVERSIDAD NACIONAL DEL CENTRO DEL PERÚ',
-    'MARINA DE GUERRA DEL PERÚ',
-    'SBN',
-    'UNIVERSIDAD NACIONAL DANIEL ALCIDES CARRIÓN',
-    'UNIVERSIDAD NACIONAL DE LA AMAZONÍA PERUANA',
-    'FUERO MILITAR POLICIAL',
-    'DIR. REG. TRANSPORTES Y COMUNICACIONES JUNÍN',
-    'DIR. REG. TRANSPORTES Y COMUNICACIONES TACNA',
-    'MINISTERIO DE SALUD - MINSA',
-    'DIR. REG. TRANSPORTES Y COMUNICACIONES HUÁNUCO',
-    'EDITORA PERÚ',
-    'MINCETUR',
-    'MINISTERIO DE LA PRODUCCIÓN',
-    'MINISTERIO DE VIVIENDA, CONSTRUCCIÓN Y SANEAMIENTO',
-    'ONPE',
-    'SENACE',
-    'SERNANP',
-    'UNIVERSIDAD NACIONAL AMAZÓNICA DE MADRE DE DIOS',
-    'UNIVERSIDAD NACIONAL DE HUANCAVELICA',
-    'UNIVERSIDAD NACIONAL DE SAN MARTÍN',
-    'UNIVERSIDAD NACIONAL MICAELA BASTIDAS DE APURIMAC',
-    'UNIVERSIDAD NACIONAL T. RODRÍGUEZ DE MENDOZA DE AMAZONAS',
     '(RENIEC) 00521 - Emisión primera vez DNI electrónico',
     '(RENIEC) 00522 - Duplicado DNI electrónico',
     '(RENIEC) 00523 - Duplicado DNI (a partir de 17 años de edad)',
@@ -74,6 +15,30 @@ const Main = () => {
     '(PODER JUDICIAL) 07005 - Reintegro',
     '(PODER JUDICIAL) 07006 - Expedición de certificado de deudor alimentario moroso',
     '(PODER JUDICIAL) 07007 - Expedición de Certificado de Homonimia',
+    '(MIGRACIONES) 00673 - Fraccionamiento de Multas',
+    '(MIGRACIONES) 00674 - Multa a Ciudadanos Nacionales',
+    '(MIGRACIONES) 00675 - Multa Extranjeros - Exceso Permanencia (Por Día)',
+    '(MIGRACIONES) 00676 - Multa Extranjeros - Uso de más de una Nacionalidad por Ingreso',
+    '(MIGRACIONES) 00677 - Multa Extranjeros - No actualizar Carné de Extranjería (Por Mes)',
+    '(MIGRACIONES) 00678 - Multa Extranjeros - No solicitar prórroga del plazo de permanencia de calidad migratoria residente (Por Día)',
+    '(MIGRACIONES) 00679 - Multa Extranjeros - Realización de actividades que no corresponden a migraciones',
+    '(MIGRACIONES) 00680 - Multa Empresa Transporte Internacional - No actualizar Registro y Control de Tripulación',
+    '(POLICÍA NACIONAL DEL PERÚ) 07081 - A01 - No respetar el mínimo de 01 metro de distancia obligatoria',
+    '(POLICÍA NACIONAL DEL PERÚ) 07082 - B01 - Salir más de 1 persona por familia por víveres o medicamentos',
+    '(POLICÍA NACIONAL DEL PERÚ) 07083 - B02 - Circular para realizar actividades no autorizadas',
+    '(POLICÍA NACIONAL DEL PERÚ) 07084 - B03 - Circular sin pase laboral',
+    '(POLICÍA NACIONAL DEL PERÚ) 07085 - B04 - Desarrollar actividades económicas no consideradas de prestación y acceso esencial',
+    '(POLICÍA NACIONAL DEL PERÚ) 07086 - B05 - Circular con vehículo de uso particular sin autorización',
+    '(POLICÍA NACIONAL DEL PERÚ) 07087 - B06 - No usar mascarilla',
+    '(POLICÍA NACIONAL DEL PERÚ) 07088 - C01 - No respetar inmovilización social día domingo',
+    '(POLICÍA NACIONAL DEL PERÚ) 07089 - C02 - Desarrollar actividades de aglomeración o concurrencia masiva en la vía pública',
+    '(POLICÍA NACIONAL DEL PERÚ) 07090 - C03 - No respetar inmovilización de 06.00 pm a 4.00 am o de 4.00 pm a 4.00 am, según corresponda',
+    '(MINISTERIO DE TRANSPORTES Y COMUNICACIONES) 00192 - Permiso de Transporte Acuático',
+    '(MINISTERIO DE TRANSPORTES Y COMUNICACIONES) 00197 - Expedición de Constancia de Fletamento de Naves de Bandera Extranjera',
+    '(GOBIERNO REGIONAL DEL CALLAO) 09421 - Callao - Licencia de Conducir',
+    '(GOBIERNO REGIONAL DEL CALLAO) 09422 - Callao - Canje de Licencia de Conducir Militar o Policial',
+    '(GOBIERNO REGIONAL DEL CALLAO) 09423 - Callao - Canje de Licencia de Conducir otorgada en otro país',
+    '(GOBIERNO REGIONAL DEL CALLAO) 09425 - Callao - Autorización/Renovación/Modificación establecimiento salud para exámenes de aptitud psicosomática licencia de conducir (Solicitar RUC)',
   ]);
 
   const handleSearchChange = (e) => {
@@ -81,7 +46,14 @@ const Main = () => {
   };
 
   const handleResultClick = (result) => {
-    alert(`You clicked on ${result}`);
+    const match = result.match(/\d{5}/); // Busca un código de 5 dígitos
+    if (match) {
+      const code = match[0];
+      console.log(`Redirigiendo a /registro-tasa/${code}`);
+      window.location.href = `/registro-tasa/${code}`; // Redirige al path con el código
+    } else {
+      console.log(`El elemento "${result}" no tiene un código válido.`);
+    }
   };
 
   const filteredResults = results.filter((result) =>
@@ -104,7 +76,7 @@ const Main = () => {
             {filteredResults.map((result, index) => (
               <div
                 key={index}
-                className="search-result-item"
+                className="search-result-item clickable"
                 onClick={() => handleResultClick(result)}
               >
                 {result}

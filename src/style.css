@@ -476,4 +476,48 @@ body {
   background-color: #f1f1f1;
 }
 
+.tasa-rectangle {
+  position: absolute; /* Permite colocar .cart-rectangle encima de .red-rectangle */
+  top: 55%; /* Ajusta esta propiedad según la posición deseada */
+  left: 29%; /* Mueve el rectángulo más hacia la izquierda */
+  transform: translate(-50%, -50%); /* Centra verticalmente */
+  background-color: #ffffff; /* Color de fondo blanco */
+  border-radius: 10px; /* Bordes redondos */
+  padding: 20px; /* Espacio interno */
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+  height: 250px; /* Ajusta la altura según sea necesario */
+  width: 800px; /* Ajusta el ancho según sea necesario */
+}
 
+.tasa-red-rectangle {
+  position: relative; /* Asegura que .cart-rectangle se posicione en relación a .red-rectangle */
+  height: 300px;
+  display: flex;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+  padding: 150px; /* Espacio interno */
+  background: linear-gradient(to right, #350000, #ec0000);
+  margin-top: 0px; /* Espacio desde el header */
+  margin-bottom: 600px; /* Espacio desde el footer */
+}
+
+.tasa-red-rectangle h1{
+  position: absolute;
+  left: 40px; /* Ajusta este valor para mover el <h1> más hacia la derecha */
+  top: 20px; /* Ajusta este valor para mover el <h1> más hacia abajo */
+  font-size: 32px;
+}
+
+.tasa-red-rectangle h2{
+  position: absolute;
+  left: 40px; /* Ajusta este valor para mover el <h1> más hacia la derecha */
+  top: 90px; /* Ajusta este valor para mover el <h1> más hacia abajo */
+  font-size: 25px;
+}
+
+.tasa-red-rectangle h3{
+  position: absolute;
+  left: 40px; /* Ajusta este valor para mover el <h1> más hacia la derecha */
+  top: 120px; /* Ajusta este valor para mover el <h1> más hacia abajo */
+  font-size: 20px;
+}

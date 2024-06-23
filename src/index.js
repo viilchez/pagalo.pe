@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './style.css';
 import React, { StrictMode } from "react";
 import { createRoot } from 'react-dom/client';
-import { createBrowserRouter, RouterProvider, Route } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Footer from './layout/Footer'; 
 import Header from './layout/Header';
 import Sidebar from './layout/Sidebar';
@@ -12,6 +12,7 @@ import CartPage from './CartPage';
 import TicketPage from './TicketPage';
 import PaymentMethod from './PaymentMethod';
 import CheckPage from './CheckPage';
+import { RegistroTasa, Tasa00521 } from './RegistroTasa'; // Importa correctamente
 
 // Componente para la página principal
 const HomePage = () => (
@@ -37,20 +38,28 @@ const router = createBrowserRouter([
     element: <HomePage />,
   },
   {
-    path: "/cart",
+    path: "cart",
     element: <CartPage />,
   },
   {
-    path: "/Mis-Tickets",
+    path: "Mis-Tickets",
     element: <TicketPage />,
   },
   {
-    path: "/Metodo-pago",
+    path: "Metodo-pago",
     element: <PaymentMethod />,
   },
   {
-    path: "/comprobante-pago",
+    path: "comprobante-pago",
     element: <CheckPage />,
+  },
+  {
+    path: "registro-tasa",
+    element: <RegistroTasa />,
+  },
+  {
+    path: "/registro-tasa/00521",
+    element: <Tasa00521 />, // Usa el nombre correcto del componente
   },
 ]);
 
