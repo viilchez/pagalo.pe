@@ -6,24 +6,27 @@ import carrito from '../assets/carrito.png';
 import ticket from '../assets/ticket.png';
 
 const Header = () => {
-  const [showModal, setShowModal] = useState(false);
+  const [showRegisterModal, setShowRegisterModal] = useState(false);
+  const [showLoginModal, setShowLoginModal] = useState(false);
 
-  const openModal = () => {
-    setShowModal(true);
+  const openRegisterModal = () => {
+    setShowRegisterModal(true);
+    setShowLoginModal(false);
+  };
+
+  const openLoginModal = () => {
+    setShowLoginModal(true);
+    setShowRegisterModal(false);
   };
 
   const closeModal = () => {
-    setShowModal(false);
+    setShowRegisterModal(false);
+    setShowLoginModal(false);
   };
 
   const handleFormSubmit = (event) => {
     event.preventDefault();
-    // Aquí puedes manejar la lógica para enviar los datos del formulario
-    // por ejemplo, puedes guardar los datos en un estado local o enviarlos a través de una API.
-    // Ejemplo básico:
-    // const formData = new FormData(event.target);
-    // console.log(formData.get('email'), formData.get('documentType'), ...);
-    closeModal(); // Cerrar el modal después de enviar el formulario
+    closeModal();
   };
 
   return (
@@ -58,7 +61,7 @@ const Header = () => {
             </ul>
           </div>
           <div className="d-flex align-items-center">
-            <a href="#" style={{ marginRight: '10px' }} onClick={openModal}>
+            <a href="#" style={{ marginRight: '10px' }} onClick={openLoginModal}>
               <img src={user} alt="Usuario" height="35" style={{ margin: '0 20px', filter: 'invert(100%)', cursor: 'pointer' }} />
             </a>
           </div>
@@ -66,7 +69,7 @@ const Header = () => {
       </nav>
 
       {/* Modal de Registro */}
-      {showModal && (
+      {showRegisterModal && (
         <div className="modal-backdrop" onClick={closeModal}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <h2>Registro de Usuario</h2>
@@ -78,7 +81,7 @@ const Header = () => {
               <div className="form-group">
                 <label htmlFor="documentType">Seleccione Tipo de Documento</label>
                 <select className="form-control" id="documentType" name="documentType" required>
-                <option value="carnet">Seleccione Tipo de Documento</option>
+                  <option value="">Seleccione Tipo de Documento</option>
                   <option value="carnet">Carnet de Extranjería</option>
                   <option value="dni">DNI</option>
                   <option value="passport">Pasaporte</option>
@@ -99,7 +102,7 @@ const Header = () => {
               <div className="form-group">
                 <label htmlFor="operator">Seleccione Operador</label>
                 <select className="form-control" id="operator" name="operator" required>
-                  <option value="entel">Seleccione Operador</option>
+                  <option value="">Seleccione Operador</option>
                   <option value="entel">Entel</option>
                   <option value="claro">Claro</option>
                   <option value="bitel">Bitel</option>
@@ -112,6 +115,29 @@ const Header = () => {
               </div>
               <button type="submit" className="btn btn-primary">Registrarse</button>
             </form>
+          </div>
+        </div>
+      )}
+
+      {/* Modal de Inicio de Sesión */}
+      {showLoginModal && (
+        <div className="modal-backdrop" onClick={closeModal}>
+          <div className="modal-content-login" onClick={(e) => e.stopPropagation()}>
+            <h2>Ingresa a Págalo.pe</h2>
+            <form onSubmit={handleFormSubmit}>
+              <div className="form-group">
+                <label htmlFor="loginEmail">Correo Electrónico</label>
+                <input type="email" className="form-control" id="loginEmail" name="loginEmail" required />
+              </div>
+              <div className="form-group">
+                <label htmlFor="loginPassword">Contraseña</label>
+                <input type="password" className="form-control" id="loginPassword" name="loginPassword" required />
+              </div>
+              <button type="submit" className="btn btn-primary">Iniciar Sesión</button>
+            </form>
+            <p className="text-center mt-3">
+              ¿No tienes una cuenta? <span className="text-primary" style={{cursor: 'pointer'}} onClick={openRegisterModal}>Regístrate</span>
+            </p>
           </div>
         </div>
       )}

@@ -392,19 +392,6 @@ body {
   padding-right: 15px;
 }
 
-.check-rectangle {
-  position: absolute; /* Permite colocar .cart-rectangle encima de .red-rectangle */
-  top: 55%; /* Ajusta esta propiedad según la posición deseada */
-  left: 29%; /* Mueve el rectángulo más hacia la izquierda */
-  transform: translate(-50%, -50%); /* Centra verticalmente */
-  background-color: #ffffff; /* Color de fondo blanco */
-  border-radius: 10px; /* Bordes redondos */
-  padding: 20px; /* Espacio interno */
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
-  height: 250px; /* Ajusta la altura según sea necesario */
-  width: 800px; /* Ajusta el ancho según sea necesario */
-}
-
 .main-title {
   display: flex;
   flex-direction: column;
@@ -774,14 +761,18 @@ body {
 }
 
 .modal-content form {
-  display: grid; /* Usamos display grid para los labels */
-  grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
-  gap: 10px; /* Espacio entre las celdas */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.modal-content .form-group {
+  display: flex;
+  flex-direction: column;
 }
 
 .modal-content label {
   margin-bottom: 8px;
-  align-self: center; /* Centramos verticalmente el label */
 }
 
 .modal-content input[type="email"],
@@ -789,14 +780,19 @@ body {
 .modal-content input[type="tel"],
 .modal-content input[type="password"],
 .modal-content select {
-  width: 100%; /* Ancho completo */
+  width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 14px;
 }
 
+.modal-content .form-group.full-width {
+  grid-column: span 2;
+}
+
 .modal-content button {
+  grid-column: span 2;
   padding: 12px 20px;
   background-color: #c00000;
   color: #fff;
@@ -804,9 +800,7 @@ body {
   border-radius: 4px;
   font-size: 16px;
   cursor: pointer;
-  margin-top: 100px; /* Espacio arriba del botón */
-  margin-right: 150px;
-  margin-left: 10px;
+  justify-self: center;
 }
 
 .modal-content button:hover {
@@ -818,4 +812,158 @@ body {
   top: 10px;
   right: 10px;
   cursor: pointer;
+}
+
+/* Estilos adicionales */
+.text-primary {
+  color: #007bff;
+}
+
+.text-primary:hover {
+  text-decoration: underline;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt-3 {
+  margin-top: 1rem;
+}
+
+.modal-content-login {
+  position: absolute;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  font-family: "Inter", sans-serif !important;
+  color: #373f41;
+  max-height: 80vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrar contenido horizontalmente */
+}
+
+.modal-content-login h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.modal-content-login form {
+  width: 100%; /* Ocupa el ancho completo */
+  max-width: 400px; /* Ancho máximo del formulario */
+}
+
+.modal-content-login .form-group {
+  width: 100%;
+  margin-bottom: 16px; /* Espacio entre grupos */
+}
+
+.modal-content-login label {
+  margin-bottom: 8px;
+}
+
+.modal-content-login input[type="email"],
+.modal-content-login input[type="text"],
+.modal-content-login input[type="tel"],
+.modal-content-login input[type="password"],
+.modal-content-login select {
+  width: 100%; /* Ancho completo */
+  max-width: 100%; /* Ancho máximo */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.modal-content-login button {
+  width: 40%; /* Ancho completo del contenedor */
+  max-width: 400px; /* Ancho máximo del botón */
+  padding: 12px 20px;
+  background-color: #c00000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px; /* Espacio arriba del botón */
+  transition: 0.3s ease;
+  margin-left: 30%;
+}
+
+.modal-content-login button:hover {
+  background-color: #979797;
+}
+
+
+.modal-content-login .close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.check-rectangle {
+  position: absolute;
+  top: 79%; /* Cambia esta propiedad según la posición deseada */
+  left: 29%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+  height: 600px;
+  width: 800px;
+}
+
+.check-rectangle h3, h4, h5, h6 {
+  font-size: 25px;
+  color: #373f41;
+  font-family: "Inter", sans-serif;
+  margin: 0; /* Ajusta los márgenes según necesites */
+  position: absolute;
+  top: 26px; /* Ajusta esta propiedad según la posición deseada */
+  left: 15%; /* Ajusta el margen izquierdo según sea necesario */
+}
+
+.check-rectangle h4 {
+  top:130px;
+  font-weight: bold;
+  left:17%;
+}
+
+.check-rectangle img {
+  top: 26px;
+}
+
+.check-red-rectangle {
+  position: relative; /* Asegura que .cart-rectangle se posicione en relación a .red-rectangle */
+  height: 300px;
+  display: flex;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+  padding: 150px; /* Espacio interno */
+  background: linear-gradient(to right, #350000, #ec0000);
+  margin-top: 0px; /* Espacio desde el header */
+  margin-bottom: 650px; /* Espacio desde el footer */
+}
+
+.check-rectangle h5 {
+  top:200px;
+  font-weight: bold;
+  left:10%;
+  font-size: 19px;
+  color:#000000;
+}
+
+.check-rectangle h6 {
+  top:200px;
+  font-weight: bold;
+  left:50%;
+  font-size: 19px;
+  color:#373f41;
 }
