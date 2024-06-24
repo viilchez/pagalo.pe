@@ -83,9 +83,8 @@ body {
   bottom: 0; /* Llega hasta el fondo de la página */
   background-color: #b6b6b6;
   width: 50px;
-  transition: width 0.5s;
+  transition: width 0.5s ease;
   overflow: hidden;
-  cursor: pointer;
   color: white;
   font-family: Arial, sans-serif;
   z-index: 1000;
@@ -94,15 +93,6 @@ body {
 
 .sidebar:hover {
   width: 600px; /* Ajusta este valor según tus necesidades */
-}
-
-.sidebar .postula {
-  padding: 10px;
-  white-space: nowrap;
-}
-
-.sidebar .postula span {
-  display: block;
 }
 
 .red-rectangle {
@@ -633,4 +623,119 @@ body {
 .carousel-caption p {
   font-size: 2rem; /* Ajusta el tamaño de la fuente */
   font-weight: bold;
+}
+
+.logo-container {
+  margin-left:20%;
+  margin-top: 5%;
+}
+
+.sidebar-rectangle1 {
+  display:flex;
+  position: absolute; /* Permite colocar .cart-rectangle encima de .red-rectangle */
+  top: 23%; /* Ajusta esta propiedad según la posición deseada */
+  left: 52%; /* Mueve el rectángulo más hacia la izquierda */
+  transform: translate(-50%, -50%); /* Centra verticalmente */
+  background-color: #ffffff; /* Color de fondo blanco */
+  border-radius: 10px; /* Bordes redondos */
+  padding: 20px; /* Espacio interno */
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+  height: 8%; /* Ajusta la altura según sea necesario */
+  width: 80%;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  opacity:0;
+  transition: opacity 0.2s ease;
+}
+
+.sidebar-rectangle2 {
+  position: absolute; /* Permite colocar .cart-rectangle encima de .red-rectangle */
+  top: 36%; /* Ajusta esta propiedad según la posición deseada */
+  left: 52%; /* Mueve el rectángulo más hacia la izquierda */
+  transform: translate(-50%, -50%); /* Centra verticalmente */
+  background-color: #ffffff; /* Color de fondo blanco */
+  border-radius: 10px; /* Bordes redondos */
+  padding: 20px; /* Espacio interno */
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+  height: 8%; /* Ajusta la altura según sea necesario */
+  width: 80%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity:0;
+  transition: opacity 0.2s ease;
+}
+
+.sidebar-rectangle3 {
+  position: absolute; /* Permite colocar .cart-rectangle encima de .red-rectangle */
+  top: 49%; /* Ajusta esta propiedad según la posición deseada */
+  left: 52%; /* Mueve el rectángulo más hacia la izquierda */
+  transform: translate(-50%, -50%); /* Centra verticalmente */
+  background-color: #ffffff; /* Color de fondo blanco */
+  border-radius: 10px; /* Bordes redondos */
+  padding: 20px; /* Espacio interno */
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+  height: 8%; /* Ajusta la altura según sea necesario */
+  width: 80%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity:0;
+  transition: opacity 0.2s ease;
+}
+
+.sidebar-rectangle4 {
+  position: absolute; /* Permite colocar .cart-rectangle encima de .red-rectangle */
+  top: 62%; /* Ajusta esta propiedad según la posición deseada */
+  left: 52%; /* Mueve el rectángulo más hacia la izquierda */
+  transform: translate(-50%, -50%); /* Centra verticalmente */
+  background-color: #ffffff; /* Color de fondo blanco */
+  border-radius: 10px; /* Bordes redondos */
+  padding: 20px; /* Espacio interno */
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+  height: 8%; /* Ajusta la altura según sea necesario */
+  width: 80%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity:0;
+  transition: opacity 0.2s ease;
+}
+
+.sidebar-rectangle5 {
+  position: absolute; /* Permite colocar .cart-rectangle encima de .red-rectangle */
+  top: 75%; /* Ajusta esta propiedad según la posición deseada */
+  left: 52%; /* Mueve el rectángulo más hacia la izquierda */
+  transform: translate(-50%, -50%); /* Centra verticalmente */
+  background-color: #ffffff; /* Color de fondo blanco */
+  border-radius: 10px; /* Bordes redondos */
+  padding: 20px; /* Espacio interno */
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+  height: 8%; /* Ajusta la altura según sea necesario */
+  width: 80%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity:0;
+  transition: opacity 0.2s ease;
+}
+
+.sidebar-rectangle1 h1, .sidebar-rectangle2 h1,
+ .sidebar-rectangle3 h1, .sidebar-rectangle4 h1, .sidebar-rectangle5 h1 {
+  font-family: "Inter", sans-serif !important;
+  font-size: 1.1rem;
+  color: #373f41;
+}
+
+.sidebar:hover .sidebar-rectangle1,
+.sidebar:hover .sidebar-rectangle2,
+.sidebar:hover .sidebar-rectangle3,
+.sidebar:hover .sidebar-rectangle4,
+.sidebar:hover .sidebar-rectangle5 {
+  opacity: 1;
 }
