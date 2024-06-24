@@ -599,10 +599,38 @@ body {
 .carousel-container {
   margin-top: 20px;
   margin-bottom: 40px;
-  margin-left: 3%;
-  width: 100%;
+  margin-left: 5%;
+  position:relative;
+  width: 90%;
 }
 
-.carousel-container img {
-  margin-left: 45%;
+.carousel-item { 
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-item img {
+  margin-left: 10%;
+}
+
+.carousel-caption {
+  position: absolute;
+  max-width: 30%; /* Ajusta el ancho del caption según sea necesario */
+  margin-left: 5%;
+  text-align: center;
+  color: #ffffff; /* Color del texto, ajusta según el diseño */
+  font-family: "Inter", sans-serif !important;
+  font-size: 1.2rem;
+  margin-left: 40%;
+  margin-bottom: 10%;
+}
+
+.carousel-caption h3 {
+  font-size: 1.5rem; /* Ajusta el tamaño de la fuente */
+  
+}
+
+.carousel-caption p {
+  font-size: 2rem; /* Ajusta el tamaño de la fuente */
+  font-weight: bold;
 }
