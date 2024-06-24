@@ -2,7 +2,6 @@ import React from 'react';
 import Footer from './layout/Footer'; 
 import Header from './layout/Header';
 import Sidebar from './layout/Sidebar';
-import Aside from './Aside';
 
 const CartPage = () => (
   <div style={{ display: 'flex', flexDirection: 'column', backgroundColor: '#ffffff', minHeight: '120vh'}}>
@@ -36,7 +35,6 @@ const CartPage = () => (
       </div>
       <a className="payment" href="/Metodo-pago">Pagar</a>
     </div>
-    <Aside />
     <Footer />
     <Sidebar />
   </div>

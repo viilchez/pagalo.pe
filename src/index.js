@@ -7,7 +7,6 @@ import Footer from './layout/Footer';
 import Header from './layout/Header';
 import Sidebar from './layout/Sidebar';
 import Main from './Main';
-import Aside from './Aside';
 import CartPage from './CartPage';
 import TicketPage from './TicketPage';
 import PaymentMethod from './PaymentMethod';
@@ -23,7 +22,6 @@ const HomePage = () => (
         <Main /> 
       </div>
       <div>
-        <Aside />
       </div>
     </div>
     <Footer />

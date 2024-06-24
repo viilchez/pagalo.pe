@@ -1,4 +1,9 @@
 import React, { useState } from 'react';
+import { Carousel } from 'react-bootstrap';
+import carrusel1 from './assets/carrusel1.png'
+import carrusel2 from './assets/carrusel2.png'
+import carrusel3 from './assets/carrusel3.png'
+import carrusel4 from './assets/carrusel4.png'
 
 const Main = () => {
   const [searchText, setSearchText] = useState('');
@@ -84,6 +89,57 @@ const Main = () => {
             ))}
           </div>
         )}
+      </div>
+      <div className="carousel-container"> 
+        <Carousel>
+          <Carousel.Item>
+            <img
+              className="carrusel1"
+              src={carrusel1} 
+              alt="First slide"
+              height="483"
+            />
+            <Carousel.Caption>
+              <h3>Hagámoslo fácil.</h3>
+              <p>¡Aceptamos diferentes medios de pago!</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="carrusel2"
+              src={carrusel2}
+              alt="Second slide"
+            />
+            <Carousel.Caption>
+              <h3>Hagámoslo fácil.</h3>
+              <p>Encuentra la tasa que necesitas.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="carrusel3"
+              src={carrusel3} 
+              alt="Third slide"
+              height="483"
+            />
+            <Carousel.Caption>
+              <h3>Hagámoslo fácil.</h3>
+              <p>Realiza tus operaciones las 24 horas del día.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="carrusel4"
+              src={carrusel4} 
+              alt="Fourth slide"
+              height="483"
+            />
+            <Carousel.Caption>
+              <h3>Hagámoslo fácil.</h3>
+              <p>¿Buscas obtener tu DNI electrónico?</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+        </Carousel>
       </div>
     </main>
   );

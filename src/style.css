@@ -595,3 +595,14 @@ body {
 .add-cart:hover {
   background-color: #979797; /* Color de fondo al pasar el ratón */
 }
+
+.carousel-container {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  margin-left: 3%;
+  width: 100%;
+}
+
+.carousel-container img {
+  margin-left: 45%;
+}

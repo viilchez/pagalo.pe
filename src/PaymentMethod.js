@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import InputMask from 'react-input-mask';
 import Header from './layout/Header';
-import Main from './Main';
-import Aside from './Aside';
 import Footer from './layout/Footer';
 import Sidebar from './layout/Sidebar';
 import agente from './assets/images.png';
@@ -105,7 +103,6 @@ const PaymentMethod = () => {
           {loading && <img src={cargandoGif} alt="Cargando..." style={{ marginLeft: '57px', verticalAlign: 'middle' }} />}
         </form>
       </div>
-      <Aside />
       <Footer />
       <Sidebar />
     </div>
