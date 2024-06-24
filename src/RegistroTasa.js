@@ -62,6 +62,7 @@ const Tasa00521 = () => {
               />
             </div>
           </div>
+          <a className="add-cart" href="/cart">Añadir al carrito</a>
         </form>
       </div> 
       <Footer />

@@ -522,7 +522,7 @@ body {
   background-color: #f7f7f7;
   color: #373f41;
   font-family: "Inter", sans-serif !important;
-  height: auto;
+  height:400px;
 }
 
 .tasa-form {
@@ -571,4 +571,27 @@ body {
 
 .flex-half .form-group {
   flex: 1;
+}
+
+.add-cart {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #c00000;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  height: 40px;
+  width: 150px;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  font-weight: 625;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.add-cart:hover {
+  background-color: #979797; /* Color de fondo al pasar el ratón */
 }
