@@ -25,7 +25,7 @@ const Header = () => {
                 </a>
               </li>
               <li className="nav-item d-flex align-items-center" style={{ margin: '0 10px' }}>
-                <a href="Mis-Tickets" className="nav-link d-flex align-items-center">
+                <a href="/Mis-Tickets" className="nav-link d-flex align-items-center">
                   <img src={ticket} alt="Ticket" height="25" style={{ margin: '0 10px' }} />
                   Mis Tickets
                 </a>

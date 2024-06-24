@@ -476,19 +476,6 @@ body {
   background-color: #f1f1f1;
 }
 
-.tasa-rectangle {
-  position: absolute; /* Permite colocar .cart-rectangle encima de .red-rectangle */
-  top: 55%; /* Ajusta esta propiedad según la posición deseada */
-  left: 29%; /* Mueve el rectángulo más hacia la izquierda */
-  transform: translate(-50%, -50%); /* Centra verticalmente */
-  background-color: #ffffff; /* Color de fondo blanco */
-  border-radius: 10px; /* Bordes redondos */
-  padding: 20px; /* Espacio interno */
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
-  height: 250px; /* Ajusta la altura según sea necesario */
-  width: 800px; /* Ajusta el ancho según sea necesario */
-}
-
 .tasa-red-rectangle {
   position: relative; /* Asegura que .cart-rectangle se posicione en relación a .red-rectangle */
   height: 300px;
@@ -498,7 +485,7 @@ body {
   padding: 150px; /* Espacio interno */
   background: linear-gradient(to right, #350000, #ec0000);
   margin-top: 0px; /* Espacio desde el header */
-  margin-bottom: 600px; /* Espacio desde el footer */
+  margin-bottom: 350px; /* Espacio desde el footer */
 }
 
 .tasa-red-rectangle h1{
@@ -520,4 +507,68 @@ body {
   left: 40px; /* Ajusta este valor para mover el <h1> más hacia la derecha */
   top: 120px; /* Ajusta este valor para mover el <h1> más hacia abajo */
   font-size: 20px;
+}
+
+.tasa-rectangle {
+  position: absolute; /* Permite colocar .cart-rectangle encima de .red-rectangle */
+  transform: translate(-50%, -50%); /* Centra verticalmente */
+  border-radius: 10px; /* Bordes redondos */
+  padding: 20px; /* Espacio interno */
+  box-shadow: 30 30px 30px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+  width: 800px; /* Ajusta el ancho según sea necesario */
+  top: 410px;
+  left: 27.5%;
+  margin: 20px;
+  background-color: #f7f7f7;
+  color: #373f41;
+  font-family: "Inter", sans-serif !important;
+  height: auto;
+}
+
+.tasa-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tasa-form .form-group {
+  margin-bottom: 15px;
+}
+
+.tasa-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.tasa-form input[type="text"] {
+  width: 100%; /* Por defecto, los inputs ocupan todo el ancho del contenedor flex */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #e9ecef;
+}
+
+.tasa-form input[type="text"]:read-only {
+  background-color: #e9ecef;
+  cursor: not-allowed;
+}
+
+.tasa-form input[type="text"]:not([readOnly]) {
+  background-color: #fff;
+}
+
+/* Clases específicas para cada input para controlar su ancho */
+.input-full {
+  width: 100%;
+}
+
+.flex-half {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.flex-half .form-group {
+  flex: 1;
 }
