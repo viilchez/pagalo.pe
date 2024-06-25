@@ -3,7 +3,8 @@ import Footer from './layout/Footer';
 import Header from './layout/Header';
 import Sidebar from './layout/Sidebar';
 import logo from './assets/BANCO DE LA NACION.png';
-import check from './assets/green-check.png'
+import check from './assets/green-check.png';
+import image from './assets/output-onlinepngtools.png';
 
 const CheckPage = () => (
     <div style={{ display: 'flex', flexDirection: 'column', minHeight: '120vh', backgroundColor: '#ffffff' }}>
@@ -34,6 +35,7 @@ const CheckPage = () => (
           <h6 style={{ marginTop: '250px' }}>Soles</h6>
           <h6 style={{ marginTop: '290px' }}>Emisisón primera vez DNI electrónico</h6>
           <h6 style={{ marginTop: '330px' }}>RENIEC</h6>
+          <img src={image} alt="Check verde" width="500" style={{ marginLeft: '800px', marginTop:'-150px'}} />
       </div> 
       <Footer />
       <Sidebar/>

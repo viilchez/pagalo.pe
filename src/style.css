@@ -949,7 +949,7 @@ body {
   padding: 150px; /* Espacio interno */
   background: linear-gradient(to right, #350000, #ec0000);
   margin-top: 0px; /* Espacio desde el header */
-  margin-bottom: 650px; /* Espacio desde el footer */
+  margin-bottom: 570px; /* Espacio desde el footer */
 }
 
 .check-rectangle h5 {
