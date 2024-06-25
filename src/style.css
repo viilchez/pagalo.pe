@@ -205,7 +205,12 @@ body {
 .left-group,
 .right-group {
   display: flex;
-  gap: 10px; /* Ajusta el espacio entre los elementos dentro de cada grupo */
+  gap: 6px; /* Ajusta el espacio entre los elementos dentro de cada grupo */
+}
+
+.right-group img {
+  cursor: pointer;
+  color:#c00000;
 }
 
 .products p {

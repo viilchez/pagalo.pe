@@ -2,6 +2,8 @@ import React from 'react';
 import Footer from './layout/Footer'; 
 import Header from './layout/Header';
 import Sidebar from './layout/Sidebar';
+import trash from './assets/trashcan.png';
+import plus from './assets/plus.png';
 
 const CartPage = () => (
   <div style={{ display: 'flex', flexDirection: 'column', backgroundColor: '#ffffff', minHeight: '120vh'}}>
@@ -22,15 +24,16 @@ const CartPage = () => (
         </div>
       </div>
       <div className="products">
-        <div className="left-group">
+        <div className="left-group" style={{ marginLeft: '8px'}}>
           <p>1</p>
           <p>RENIEC</p>
           <p>00521 - Emisión primera vez DNI electrónico</p>
         </div>
-        <div className="right-group">
+        <div className="right-group " style={{ marginRight: '4px'}}>
           <p>S/ 41.0</p>
           <p>DNI - 12345678</p>
-          <p>Options</p>
+          <img src={trash} alt="Eliminar" height="30" style={{ marginTop: '7px'}} />
+          <img src={plus} alt="Añadir" height="30" style={{ marginTop: '7px'}} />
         </div>
       </div>
       <a className="payment" href="/Metodo-pago">Pagar</a>
