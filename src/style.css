@@ -116,7 +116,7 @@ body {
   padding: 150px; /* Espacio interno */
   background: linear-gradient(to right, #350000, #ec0000);
   margin-top: 0px; /* Espacio desde el header */
-  margin-bottom: 600px; /* Espacio desde el footer */
+  margin-bottom: 650px; /* Espacio desde el footer */
 }
 
 .cart-rectangle {
